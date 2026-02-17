@@ -48,5 +48,6 @@ examples:
 enum Day { MONDAY, TUESDAY, WEDNESDAY }
 Day today = Day.MONDAY;
 
-*
+
+
 
