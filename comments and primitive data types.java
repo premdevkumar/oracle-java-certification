@@ -48,6 +48,28 @@ examples:
 enum Day { MONDAY, TUESDAY, WEDNESDAY }
 Day today = Day.MONDAY;
 
+*Wrapper class :
+A wrapper class is a class that wraps  a primitive value inside an object.
+Wrapper classes belong to java.lang package.
+They allow primitive values to be treated as objects.
+They support autoboxing and unboxing.
+Wrapper objects can store null, primitives cannot.
+
+Autoboxing = Automatic conversion of primitive → Wrapper object
+int x = 10;
+Integer num = x;   // Autoboxing
+//Integer num = Integer.valueOf(x);
+
+Unboxing = Automatic conversion of Wrapper object → Primitive
+   Integer num = 20;
+int x = num;   // Unboxing
+//int x = num.intValue();
+/* ArrayList<Integer> list = new ArrayList<>();
+list.add(10);   // Autoboxing happens here
+*/
+
+
+
 
 
 
