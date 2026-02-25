@@ -1,0 +1,82 @@
+Literals in Java
+
+A literal is a fixed value written directly in code.
+
+🔹 Integer Literal
+int a = 10;      // decimal
+int b = 0xA;     // hexadecimal
+int c = 012;     // octal
+int d = 0b1010;  // binary
+012 is octal (base 8), not twelve.
+🔹 Floating Literal
+double d = 10.5;   // default double
+float f = 10.5f;   // must add f
+ Without f, it becomes double.
+🔹 Character Literal
+char ch = 'A';
+char ch2 = 65;  // ASCII
+🔹 Boolean Literal
+boolean flag = true;
+✅ 2️⃣ Type Casting (VERY IMPORTANT)
+🔹 Widening (Automatic)
+Small → Large
+int a = 10;
+double d = a;   // automatic
+No data loss.
+🔹 Narrowing (Manual)
+Large → Small
+double d = 10.5;
+int a = (int) d;   // explicit casting
+Data loss possible.
+✅ 3️⃣ Operators in Java
+🔹 Arithmetic Operators
++  -  *  /  %
+Example:
+int a = 10, b = 3;
+System.out.println(a / b);  // 3
+System.out.println(a % b);  // 1
+⚠️ Integer division removes decimal part.
+🔹 Relational Operators
+==  !=  >  <  >=  <=
+
+Example:
+
+System.out.println(10 > 5);  // true
+🔹 Logical Operators
+&&  ||  !
+Example:
+boolean a = true;
+boolean b = false;
+System.out.println(a && b);  // false
+🔹 Assignment Operators
+=  +=  -=  *=  /=  %=
+Example:
+int x = 5;
+x += 3;  // x = x + 3
+✅ 4️⃣ Increment & Decrement (VERY IMPORTANT)
+🔹 Post-Increment
+int a = 5;
+System.out.println(a++);  // prints 5
+System.out.println(a);    // 6
+Use first, then increase.
+🔹 Pre-Increment
+int a = 5;
+System.out.println(++a);  // prints 6
+Increase first, then use.
+🔥 Common exam question area.
+✅ 5️⃣ Operator Precedence (Exam Trick)
+
+Order:
+1. ()
+2. ++ --
+3. * / %
+4. + -
+5. Relational
+6. Logical
+
+Example:
+
+int x = 5 + 3 * 2;
+System.out.println(x);  // 11
+
+Because multiplication happens first.
