@@ -68,6 +68,55 @@ int x = num;   // Unboxing
 list.add(10);   // Autoboxing happens here
 */
 
+***
+
+// Difference Between int and Integer
+Feature	         int	     Integer
+Type	        Primitive	    Wrapper Class
+Stores	    Actual value	Object (reference)
+Can be null?	❌ No	       ✅ Yes
+Memory	       Less	       More
+Methods available?	❌ No	  ✅ Yes (parseInt, compareTo, etc.)
+Used in Collections?	❌ No	  ✅ Yes
+
+
+int (Primitive)
+int x = 10;
+Stores value directly.
+Faster.
+Cannot store null.
+Cannot call methods.
+
+Example:
+/////
+int a = 5;
+// a.compareTo(10); ❌ Not possible
+
+
+Integer (Wrapper Class)
+Integer num = 10;
+
+Stores object reference.
+
+Can store null.
+
+Has useful methods.
+
+Example:
+Case 1: Null Problem
+Integer num = null;
+int x = num;   // Runtime error (NullPointerException)
+
+Because Java tries to unbox null.
+
+⚠️ Case 2: == Comparison
+Integer a = 100;
+Integer b = 100;
+System.out.println(a == b);   // true
+Integer num = 10;
+System.out.println(num.compareTo(20));
+
+
 
 
 
