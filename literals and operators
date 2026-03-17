@@ -80,3 +80,98 @@ int x = 5 + 3 * 2;
 System.out.println(x);  // 11
 
 Because multiplication happens first.
+# Java Operators – Short Notes
+
+## 1. Bitwise Operators
+
+Bitwise operators work on **binary representation (bits)** of numbers.
+
+| Operator | Name        | Description                     |
+| -------- | ----------- | ------------------------------- |
+| `&`      | Bitwise AND | Returns 1 if both bits are 1    |
+| `\|`     | Bitwise OR  | Returns 1 if any bit is 1       |
+| `^`      | Bitwise XOR | Returns 1 if bits are different |
+| `~`      | Bitwise NOT | Reverses all bits               |
+
+Example:
+
+```java
+int a = 5;   // 0101
+int b = 3;   // 0011
+System.out.println(a & b); // 1
+System.out.println(a | b); // 7
+System.out.println(a ^ b); // 6
+System.out.println(~a);    // -6
+```
+
+---
+
+# 2. Shift Operators
+
+Shift operators move bits left or right.
+
+| Operator | Name        | Description              |
+| -------- | ----------- | ------------------------ |
+| `<<`     | Left Shift  | Shifts bits to the left  |
+| `>>`     | Right Shift | Shifts bits to the right |
+
+### Left Shift
+
+Formula:
+
+```
+a << n = a × 2ⁿ
+```
+
+Example:
+
+```java
+int a = 5;
+System.out.println(a << 1); // 10
+```
+
+### Right Shift
+
+Formula:
+
+```
+a >> n = a ÷ 2ⁿ
+```
+
+Example:
+
+```java
+int a = 8;
+System.out.println(a >> 1); // 4
+```
+
+---
+
+# 3. Ternary Operator
+
+The ternary operator is a **short form of if-else statement**.
+
+Syntax:
+
+```
+condition ? value_if_true : value_if_false;
+```
+
+Example:
+
+```java
+int a = 10;
+int b = 20;
+
+int max = (a > b) ? a : b;
+
+System.out.println(max);
+```
+
+---
+
+# Important Points
+
+* Bitwise operators work on **binary values**.
+* Shift operators move bits **left or right**.
+* Ternary operator is used to **simplify if-else conditions**.
